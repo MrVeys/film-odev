@@ -2,7 +2,7 @@ import React, { useEffect, useReducer } from "react";
 import axios from "axios";
 import { initialState, showReducer, ACTIONS } from "../reducer/showReducer";
 import SearchBox from "../components/SearchBox";
-import TVList from "../components/TVList";
+import TVList from "../components/TvList";
 import WatchlistPanel from "../components/WatchlistPanel"; 
 
 const API_URL = "https://api.tvmaze.com/search/shows?q=";
