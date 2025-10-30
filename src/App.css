@@ -1,0 +1,90 @@
+
+.watchlist-panel {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    height: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.watchlist-panel h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.empty-watchlist {
+    color: #606770;
+    font-size: 14px;
+    text-align: center;
+}
+
+.watchlist-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.watchlist-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.watchlist-items li .remove-btn {
+    background: none;
+    border: none;
+    color: #d93025;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+.show-detail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 30px;
+}
+
+.show-detail img {
+    width: 210px;
+    height: 295px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.show-detail h1 {
+    margin-top: 0;
+}
+
+.episodes-list {
+    grid-column: span 2;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.episode-item {
+    padding: 10px;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.episode-item p {
+    margin: 0;
+}
+.card-buttons button:last-of-type {
+    background-color: #1877f2;
+    color: white;
+}
+
+.card-buttons button:last-of-type:hover {
+    opacity: 0.9;
+}

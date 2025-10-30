@@ -1,0 +1,159 @@
+
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+.app {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #1877f2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    width: 300px;
+}
+
+.search-box button {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.list-area {
+    flex: 3;
+}
+
+
+.watchlist-panel-placeholder {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    height: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* TVList  */
+.tv-list {
+    display: grid;
+
+
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+}
+
+/* TVCard  */
+.tv-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.tv-card:hover {
+    transform: translateY(-5px);
+}
+
+.tv-card img {
+    width: 100%;
+    height: 295px;
+    object-fit: cover;
+}
+
+.tv-card-content {
+    padding: 15px;
+}
+
+.tv-card-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.tv-card-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #606770;
+}
+
+.tv-card-content .summary {
+    font-size: 13px;
+    line-height: 1.4;
+    height: 55px;
+    overflow: hidden;
+}
+
+.card-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.card-buttons button {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card-buttons button:first-of-type {
+    background-color: #e4e6eb;
+    color: #1c1e21;
+}
+
+.card-buttons button:last-of-type {
+    background-color: #1877f2;
+    color: white;
+}
+
+
+.spinner, .error, .empty {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #606770;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: #606770;
+    font-size: 14px;
+}
