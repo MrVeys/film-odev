@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./Pages/Home";
 import Footer from "./components/Footer";
 import ShowDetail from "./Pages/ShowDetails";
 import './App.css';
@@ -15,7 +15,6 @@ const App = () => {
                 <main>
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        {/* Detay sayfası için yeni rota */}
                         <Route path="/show/:id" element={<ShowDetail />} />
                     </Routes>
                 </main>
