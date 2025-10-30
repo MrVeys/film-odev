@@ -3,7 +3,7 @@ import axios from "axios";
 import { initialState, showReducer, ACTIONS } from "../reducer/showReducer";
 import SearchBox from "../components/SearchBox";
 import TVList from "../components/TVList";
-import WatchlistPanel from "../components/WatchlistPanel"; // Yeni import
+import WatchlistPanel from "../components/WatchlistPanel"; 
 
 const API_URL = "https://api.tvmaze.com/search/shows?q=";
 
